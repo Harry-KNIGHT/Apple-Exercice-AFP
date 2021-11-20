@@ -9,26 +9,34 @@
  
  En utilisant des tableaux de type `String`, créez au moins deux listes, une pour les défis de marche et une pour les défis de course. Chacun devrait avoir au moins deux défis et devrait être initialisé à l'aide d'un littéral de tableau. N'hésitez pas à créer plus de listes pour différentes activités.
  */
-
-
+var stepsChallenge: [String] = ["Marcher 5 kilomètres en 2 heures", "Marcher 2 heures sans interruption 3 fois par semaine"]
+var runChallenge: [String] = ["Courir 3 fois par semaine", "Faire le marathon de Boston", "Courir dans la jungle"]
 /*:
-Dans votre application, vous souhaitez afficher toutes ces listes sur le même écran, regroupées en sections. Créez un tableau `challenges` contenant chacune des listes que vous avez créées (ce sera un tableau de tableaux). En utilisant `challenges`, imprimez le premier élément de la deuxième liste de défis.
+ Dans votre application, vous souhaitez afficher toutes ces listes sur le même écran, regroupées en sections. Créez un tableau `challenges` contenant chacune des listes que vous avez créées (ce sera un tableau de tableaux). En utilisant `challenges`, imprimez le premier élément de la deuxième liste de défis.
  */
-
+var challenge = [stepsChallenge, runChallenge]
 
 /*:
  Tous les défis seront réinitialisés à la fin du mois. Utilisez `removeAll` pour tout supprimer de `challenges`. Imprimer `challenges`.
  */
-
-
+challenge.removeAll()
 /*:
  Créez un nouveau tableau de type `String` qui représentera les défis auxquels un utilisateur s'est engagé au lieu des défis disponibles. Il peut s'agir d'un tableau vide ou contenir quelques éléments.
  */
+var challengeAccepted = [String]()
 
+challengeAccepted = ["Courrir pendant 20 min rapidement", "Marcher 2 heures sans s'arrêter", "Se reposer"]
 
+print(challengeAccepted)
 /*:
  Ecrivez une instruction if qui utilisera `isEmpty` pour vérifier s'il y a quelque chose dans le tableau. Si ce n’est pas le cas, imprimez une déclaration demandant à l’utilisateur de s’engager dans un défi. Ajoutez une instruction else-if qui indiquera "Le défi que vous avez choisi est <INSERER LE CHALLENGE CHOISI>" si le nombre de tableaux est exactement égal à 1. Ajoutez ensuite une autre instruction indiquant "Vous avez choisi plusieurs défis."
  */
-
+if challengeAccepted.isEmpty {
+    print("Vous n'avez pas de défi, engagez vous dans au moins un défi")
+}else if challenge.count == 1 {
+    print("Vous avez choisi \(challengeAccepted)")
+}else {
+    print("Bravo, vous avez choisi plusieurs défis")
+}
 
 //: [Previous](@previous)  |  page 2 of 4  |  [Next: Exercise - Dictionaries](@next)
