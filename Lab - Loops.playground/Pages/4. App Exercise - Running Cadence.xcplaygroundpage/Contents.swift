@@ -11,13 +11,18 @@ import Foundation
  Pour cet exercice, vous simulerez un "test" de la fonction de cadence de votre application. Utilisez une boucle while pour imprimer "Faites un pas" sur la console 10 fois. Une fois que vous avez imprimé avec succès "Faites un pas" sur la console 10 fois, ajoutez le code suivant à la fin de votre boucle while: `Thread.sleep (forTimeInterval: 60 / cadence)`. Cela mettra une pause entre chaque itération de la boucle while afin que les instructions d'impression apparaissent réellement à la cadence appropriée.
  */
 let cadence: Double = 180
-var testSteps = 0
+var testSteps = 0.0
 
+
+//Didn't understand :/
+//while testSteps < 10 {
+//    print("Faites un pas")
+//    Thread.sleep (forTimeInterval: 60 / cadence)
+//}
 
 /*:
-Recréez l'exemple de cadence ci-dessus en utilisant une boucle de répétition.
+ Recréez l'exemple de cadence ci-dessus en utilisant une boucle de répétition.
  */
-testSteps = 0 
 
 
 //: [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Control Transfer Statements](@next)
