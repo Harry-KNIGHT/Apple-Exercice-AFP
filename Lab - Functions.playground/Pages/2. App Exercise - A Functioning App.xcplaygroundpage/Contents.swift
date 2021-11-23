@@ -9,26 +9,37 @@
  
  Un processus récurrent comme celui-ci est un candidat idéal pour une fonction. Ecrivez une fonction appelée `incrementSteps` après la déclaration de` pas` ci-dessous qui incrémentera `pas` et affichera sa valeur. Appelez la fonction plusieurs fois et observez les impressions.
  */
-var steps = 0
-func incrementSteps() {
-    print(steps)
-    steps += 1
-}
-
-incrementSteps()
-incrementSteps()
-incrementSteps()
-incrementSteps()
+/* var steps = 0
+ func incrementSteps() {
+ print(steps)
+ steps += 1
+ }
+ 
+ incrementSteps()
+ incrementSteps()
+ incrementSteps()
+ incrementSteps() */
 /*:
-De même, si vous souhaitez fournir régulièrement des mises à jour de progression à votre utilisateur, vous pouvez intégrer vos instructions de flux de contrôle contrôlant les progrès dans une fonction. Écrivez une fonction appelée `progressUpdate` après la déclaration de `goal` ci-dessous. La fonction devrait afficher "Vous partez du bon pied". si `steps` est inférieur à 10% de `goal`, "vous êtes presque à mi-chemin!" si `steps` est inférieur à la moitié de `goal`, "Vous en êtes à mi-chemin!" si `steps` est inférieur à 90% de `goal`, "Vous y êtes presque!" si `steps` est inférieur à `goal`, et que "vous battez votre objectif!" autrement. Appelez la fonction et observez l'impression. N'oubliez pas que vous pouvez convertir des nombres en utilisant l'initialiseur Int ou Double approprié.
+ De même, si vous souhaitez fournir régulièrement des mises à jour de progression à votre utilisateur, vous pouvez intégrer vos instructions de flux de contrôle contrôlant les progrès dans une fonction. Écrivez une fonction appelée `progressUpdate` après la déclaration de `goal` ci-dessous. La fonction devrait afficher "Vous partez du bon pied". si `steps` est inférieur à 10% de `goal`, "vous êtes presque à mi-chemin!" si `steps` est inférieur à la moitié de `goal`, "Vous en êtes à mi-chemin!" si `steps` est inférieur à 90% de `goal`, "Vous y êtes presque!" si `steps` est inférieur à `goal`, et que "vous battez votre objectif!" autrement. Appelez la fonction et observez l'impression. N'oubliez pas que vous pouvez convertir des nombres en utilisant l'initialiseur Int ou Double approprié.
  */
+var steps = 0
 let goal = 10_000
 
 func progressUpdate() {
+    
     if steps < goal / 10 {
-        print("Vou partez du bon pied")
-    }else if steps == goal / 2 {
-        print("Vous êtes à mi-chemin")
-    }else if steps > 
+        print("Vous patez du bon pied")
+    }else if steps < goal / 2 {
+        print("Vous êtes presque à mi chemin")
+    }else if steps < goal * 90 / 100 {
+        print("Vous êtes à mi chemin")
+    }else if steps < goal {
+        print("Vous y êtes presque")
+    }else {
+        print("Vous battez votre record !")
+    }
 }
+progressUpdate()
+
+
 //: [Previous](@previous)  |  page 2 of 6  |  [Next: Exercise - Parameters and Argument Labels](@next)
