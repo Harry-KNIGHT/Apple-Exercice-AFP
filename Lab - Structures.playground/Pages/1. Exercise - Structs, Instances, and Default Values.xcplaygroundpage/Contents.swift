@@ -3,12 +3,13 @@
  
  Imagine you are creating some kind of app for monitoring location. Create a `GPS` struct with two variable properties, latitude and longitude, both with default values of 0.0.
  */
-
+var latitude = 0.0
+var longitudue = 0.0
 
 /*:
  Create a variable instance of `GPS` called `somePlace`. It should be initialized without supplying any arguments. Print out the latitude and longitude of `somePlace`, which should be 0.0 for both.
  */
-
+var somePlace
 
 /*:
  Change `somePlace`'s latitude to 51.514004, and the longitude to 0.125226, then print the updated values.

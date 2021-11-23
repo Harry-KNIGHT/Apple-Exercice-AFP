@@ -3,6 +3,8 @@
  
  Le code ci-dessous affiche quelques courtes déclarations sur ce que vous avez appris dans cette leçon. Ouvrez la zone de la console et affichez la sortie du code.
  */
+
+import Foundation
 print("I have learned the following:")
 print("What features make Swift a modern and safe language")
 print("How to use the Swift REPL in Terminal")
@@ -10,7 +12,8 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
 Utilisez plusieurs fonctions `print` pour écrire quelques paroles de votre chanson préférée.
  */
-
+print("Big wheels keeps on turning")
+print("Carry me home to see my kin")
 
 
 /*:
